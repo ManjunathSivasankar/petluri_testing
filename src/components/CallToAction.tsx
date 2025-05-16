@@ -22,13 +22,7 @@ const CallToAction = () => {
             >
               <Link to="/courses">Browse Courses</Link>
             </Button>
-            <Button
-              size="lg"
-              className="bg-offwhite text-charcoal hover:bg-offwhite/80 smooth-transition"
-              asChild
-            >
-              <Link to="/contact">Enroll now</Link>
-            </Button>
+           
           </div>
         </div>
       </div>

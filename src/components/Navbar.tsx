@@ -25,21 +25,19 @@ const Navbar = () => {
         <nav className="hidden lg:flex items-center space-x-8">
           <Link
             to="/"
-            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition"
-          >
+            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition">
             Home
+          </Link>
+          
+          <Link
+            to="/courses"
+            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition">
+            Courses
           </Link>
           <Link
             to="/about"
-            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition"
-          >
+            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition">
             About
-          </Link>
-          <Link
-            to="/courses"
-            className="text-foreground font-medium hover:text-blue underline-animation smooth-transition"
-          >
-            Courses
           </Link>
           <Link
             to="/contact"
