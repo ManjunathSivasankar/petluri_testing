@@ -98,7 +98,7 @@ const SlidingBanner = () => {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-offwhite text-offwhite hover:bg-blue hover:text-white hover:border-blue smooth-transition px-8 py-6"
+                        className="border-offwhite text-blue hover:bg-blue hover:text-white hover:border-blue smooth-transition px-8 py-6"
                         asChild
                       >
                         <Link to="/contact">Contact Us</Link>
