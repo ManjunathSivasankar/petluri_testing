@@ -98,7 +98,7 @@ const SlidingBanner = () => {
                       <Button
                         size="lg"
                         variant="outline"
-                        className="border-offwhite text-offwhite hover:bg-blue hover:text-white hover:border-blue smooth-transition px-8 py-6"
+                        className="border-offwhite text-blue hover:bg-blue hover:text-white hover:border-blue smooth-transition px-8 py-6"
                         asChild
                       >
                         <Link to="/contact">Contact Us</Link>
@@ -110,12 +110,7 @@ const SlidingBanner = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 z-10">
-          <CarouselPrevious className="bg-gold/70 hover:bg-blue text-white smooth-transition" />
-        </div>
-        <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10">
-          <CarouselNext className="bg-gold/70 hover:bg-blue text-white smooth-transition" />
-        </div>
+       
         
         {/* Slide indicators */}
         <div className="absolute bottom-5 left-0 right-0">
