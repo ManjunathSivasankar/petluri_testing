@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 40% 98%;
+    --foreground: 220 13% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 14%;
+
+    --primary: 38 68% 60%;
+    --primary-foreground: 220 13% 14%;
+
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 13% 14%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 38 68% 50%;
+    --accent-foreground: 220 13% 14%;
+
+    /* New blue color values */
+    --blue: 210 100% 50%;
+    --blue-hover: 210 100% 40%;
+    --blue-light: 210 100% 85%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 38 68% 80%;
+    --input: 38 68% 80%;
+    --ring: 38 68% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 45 40% 98%;
+    --sidebar-foreground: 220 13% 14%;
+    --sidebar-primary: 38 68% 60%;
+    --sidebar-primary-foreground: 220 13% 14%;
+    --sidebar-accent: 38 68% 50%;
+    --sidebar-accent-foreground: 220 13% 14%;
+    --sidebar-border: 38 68% 80%;
+    --sidebar-ring: 38 68% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  /* Updated underline animation with blue color */
+  .underline-animation {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .section {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+
+  .hero-slide {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero-slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(34, 31, 38, 0.5); /* Deep charcoal with opacity */
+    padding: 2rem;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .section-heading {
+    @apply relative inline-block mb-12 text-charcoal;
+  }
+
+  .section-heading::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-1/4 h-1 bg-gold transform translate-y-2;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #E0AC52, #F5D6A8);
+  }
+
+  /* New blue hover classes */
+  .blue-hover {
+    @apply hover:text-blue transition-colors duration-300;
+  }
+
+  .blue-border {
+    @apply border-blue;
+  }
+
+  .blue-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue focus:border-blue;
+  }
+}
