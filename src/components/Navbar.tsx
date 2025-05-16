@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
@@ -9,8 +8,13 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white py-5 shadow-sm">
       <div className="container max-w-7xl mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-foreground">
-          EduHub
+        {/* Logo */}
+        <Link to="/" className="flex items-center space-x-2">
+          <img
+            src="/public/petluri_logo.jpeg"
+            alt="Petluri Logo"
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Mobile Menu Button */}
@@ -28,7 +32,6 @@ const Navbar = () => {
             className="text-foreground font-medium hover:text-blue underline-animation smooth-transition">
             Home
           </Link>
-          
           <Link
             to="/courses"
             className="text-foreground font-medium hover:text-blue underline-animation smooth-transition">
